@@ -1,9 +1,5 @@
-from urllib.request import urlopen
-import urllib.response
-import urllib.request
-import urllib.parse
+
 import requests 
-import urllib3 
 from bs4 import BeautifulSoup
 
 class web_request:  
@@ -30,19 +26,6 @@ class web_request:
             print('\n *[Requests Failed...]* ')
             return ''
 
-    def openurl(self):  
-        headers = {}
-        headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686)"
-        # print('urllib => \n' , self.url)
-        try:
-            req  = urllib.request.Request(self.url)
-            resp = urllib.request.urlopen(req, timeout=10)
-            pagesource = resp.read().decode(encoding='utf-8', errors='strict') 
-            # print(pagesource)
-            return pagesource
-        except:
-            print('\n * [ ERROR Loading website with urllib ] *') 
-            return ''
 
 if __name__ == "__main__":
     

@@ -7,6 +7,7 @@ from WebRequest import web_request
 
 class love_calcz_hack:
     link = ''
+    source = None
     posturl = ''
     formdata = {}
     headers = {}
@@ -17,10 +18,7 @@ class love_calcz_hack:
 
     def get_source(self):
         web = web_request(self.link,'get')
-        s1 = web.open_request()
-        s2 = web.openurl()
-        if len(s1) > len(s2): self.source = s1
-        else: self.source = s2
+        self.source = web.open_request()
 
     def fill_form(self, name, crush):
         soup = BeautifulSoup(self.source, features="lxml")
@@ -48,11 +46,11 @@ class love_calcz_hack:
 if __name__ == "__main__":
     
     # Enter the Link that your Friend has shared with you
-    link = ''
+    link = 'https://lovecalczone.com/calculator/c352fae7/'
 
     # What you want to send, Fill the below 2 fields
-    name = 'Name'
-    crush = 'Crush'
+    name = 'N'
+    crush = 'C'
 
     # How many times you want to send the response
     # Set Value for the 'count' 
