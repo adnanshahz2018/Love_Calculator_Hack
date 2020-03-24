@@ -1,2 +1,2 @@
 # Love_Calculator_Hack
- If Friends Tease you with Love_Calcz. Please Feel Free to Tease them back :)
+ If Friends Tease you with lovecalczone. Please Feel Free to Tease them back :)
