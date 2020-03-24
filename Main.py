@@ -46,7 +46,7 @@ class love_calcz_hack:
 if __name__ == "__main__":
     
     # Enter the Link that your Friend has shared with you
-    link = 'https://lovecalczone.com/calculator/c352fae7/'
+    link = ''
 
     # What you want to send, Fill the below 2 fields
     name = 'N'
@@ -62,6 +62,7 @@ if __name__ == "__main__":
 
     # Email used by your Friend
     print( '\n Email Used: ', love.Email, '\n' )
+    
 
     for i in range(count):
         love.send_response()
