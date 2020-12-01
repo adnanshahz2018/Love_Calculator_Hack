@@ -28,10 +28,14 @@ class love_calcz_hack:
         for field in fields:
             self.formdata[field.get('name')] = field.get('value')
 
-        self.Email = self.formdata['myemailsss']
-
         self.formdata['nameField'] = name
         self.formdata['crushField'] = crush
+        
+        # self.formdata['myemailsss'] = 'adnanshahz2016@gmail.com'
+        # self.formdata['emailField'] = 'adnanshahz2016@gmail.com'
+
+        self.Email = self.formdata['myemailsss']
+
         self.headers['User-Agent'] = "Mozilla/5.0 (X11; Linux i686)"
 
     def send_response(self):
@@ -46,11 +50,11 @@ class love_calcz_hack:
 if __name__ == "__main__":
     
     # Enter the Link that your Friend has shared with you
-    link = ''
+    link = 'https://lovecalczone.com/calculator/c352fae7/'
 
     # What you want to send, Fill the below 2 fields
-    name = 'N'
-    crush = 'C'
+    name = 'new'
+    crush = 'trial'
 
     # How many times you want to send the response
     # Set Value for the 'count' 
@@ -67,4 +71,6 @@ if __name__ == "__main__":
     for i in range(count):
         love.send_response()
 
-    
+    """
+    How about we use this admin the 'Email Used: admin@lovecalczone.com
+    """
